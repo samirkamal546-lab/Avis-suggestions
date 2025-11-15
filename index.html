@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EsiCareerBridge - Avis et Suggestions</title>
+    <style>
+        body { 
+            margin:0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:15px 40px;
+            background:#ffffff;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+        .logo img {
+            width:50px;
+            height:50px;
+            object-fit:cover;
+        }
+        nav a {
+            margin:0 15px;
+            text-decoration:none;
+            color:#333;
+            font-size:18px;
+        }
+        .btn-login {
+            background:#e74c3c;
+            color:white;
+            padding:10px 20px;
+            border-radius:8px;
+            text-decoration: none;
+        }
+        .hero {
+            background: linear-gradient(to right, #1e3c72, #2a72b8);
+            color:white;
+            text-align:center;
+            padding:120px 20px;
+        }
+        .hero h1 { font-size:48px; margin-bottom:20px; }
+        .hero p { font-size:22px; max-width:800px; margin:auto; }
+        .btn-primary {
+            padding:15px 25px;
+            border-radius:8px;
+            font-size:20px;
+            margin:15px;
+            display: inline-block;
+            text-decoration: none;
+            background:#e74c3c; 
+            color:white;
+        }
+        
+        /* Styles pour la section Avis et Suggestions */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .avis-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1e3c72;
+            font-size: 36px;
+        }
+        
+        .company-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .company-item {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .company-item:last-child {
+            border-bottom: none;
+        }
+        
+        .company-item h2 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .company-logo {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .quote {
+            background-color: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .images-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .avis-container {
+                padding: 15px;
+            }
+            
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            
+            nav {
+                margin: 15px 0;
+                text-align: center;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+            
+            .images-container {
+                flex-direction: column;
+            }
+            
+            .company-logo {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <!-- Logo placeholder -->
+        <div style="width:50px; height:50px; background:#1e3c72; color:white; display:flex; align-items:center; justify-content:center; font-weight:bold;">ECB</div>
+    </div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Optimisation LinkedIn</a>
+        <a href="#">Recherche de Stage</a>
+        <a href="#">Soft Skills</a>
+        <a href="#avis-suggestions">Avis</a>
+        <a href="#">Contact</a>
+    </nav>
+    <a class="btn-login" href="#">Se connecter</a>
+</header>
+
+<section class="hero">
+    <h1>Votre Pont vers l'Excellence Professionnelle</h1>
+    <p>Notre plateforme transforme votre recherche de stage en parcours de développement complet, intégrant les soft skills directement dans votre préparation.</p>
+    <a href="#avis-suggestions" class="btn-primary">Découvrir les avis</a>
+</section>
+
+<section id="avis-suggestions" class="container">
+    <div class="avis-container">
+        <h2 class="section-title">Avis et suggestions</h2>
+        
+        <p>Concernant les stages on peut suggérer à vous plusieurs entreprises à déposer votre CV et autres sites web où vous pouvez chercher des stages dans votre filière de data science ou de Cybersécurité.</p>
+        
+        <ul class="company-list">
+            <li class="company-item">
+                <h2>1 - Office National des Chemins de Fer (ONCF)</h2>
+                <img src="media/image2.png" alt="ONCF Logo" class="company-logo">
+                <p>L'ONCF offre des nombreux stages dans différents domaines comme le data science, cybersécurité et de la logistique.</p>
+                <div class="quote">
+                    <p>D'après HAMZA (Cyber sécurité) : "Je suis ravi de rejoindre l'ONCF en tant que stagiaire en cyber sécurité. Ce stage représente une excellente opportunité pour approfondir mes connaissances en protection des systèmes d'information et contribuer à la sécurisation des infrastructures ferroviaires."</p>
+                </div>
+            </li>
+            
+            <li class="company-item">
+                <h2>2 - Inwi et Orange</h2>
+                <img src="media/image3.png" alt="Inwi et Orange Logo" class="company-logo">
+                <p>Ces entreprises offre un stage de qualité pour les étudiants talentueux dans la gestion des réseaux, cybersécurité et le commerce.</p>
+                <div class="quote">
+                    <p>D'après WISSAL (Cybersécurité) : "Je suis ravie d'annoncer mon intégration en tant que stagiaire chez inwi. Ce stage représente une opportunité unique pour approfondir mes compétences en réseaux et cybersécurité... Il me permettra d'explorer différents aspects tels que la sécurisation des infrastructures, la gestion des firewalls, l'optimisation des réseaux ..."</p>
+                </div>
+            </li>
+            
+            <li class="company-item">
+                <h2>3 - Oracle</h2>
+                <img src="media/image4.png" alt="Oracle Logo" class="company-logo">
+                <p>Oracle, qui a récemment renforcé sa présence dans le pays en inaugurant un centre de recherche et développement (R&D) à Casablanca, elle offre des stages dans des domaines de l'IA, cloud et data science.</p>
+                <div class="quote">
+                    <p>Abdjallil (1ére année à l'ESI en data science) : "J'ai eu le plaisir et la chance d'avoir un stage de qualité chez Oracle pour renforcer mes connaissances en sciences de données."</p>
+                </div>
+            </li>
+            
+            <li class="company-item">
+                <h2>4 - 3T DEVELOPPEMENT MAROC</h2>
+                <img src="media/image5.png" alt="3T Développement Logo" class="company-logo">
+                <p>3T Développement est un groupe multimarque dans le secteur de la restauration, du fitness et du retail. Depuis 2016, nous développons 10 marques sur différents segments, en France et à l'international comme O'tacos et Fitness Park.</p>
+                <p>Depuis 2022, le groupe 3T Développement déploie la marque Fitness Park, en qualité de master franchisé sur l'intégralité du Royaume du Maroc. Elle offre souvent des stages en Data science.</p>
+            </li>
+            
+            <li class="company-item">
+                <h2>5 - LOTUS CAPITAL GESTION</h2>
+                <img src="media/image6.png" alt="Lotus Capital Gestion Logo" class="company-logo">
+                <p>Lotus Capital Gestion est la première société marocaine spécialisée dans le trading quantitatif et la fintech, se concentrant sur une variété de classes d'actifs. En intégrant l'expertise de traders expérimentés, d'analystes quantitatifs et de développeurs innovants, l'entreprise utilise des technologies de pointe pour surpasser les indices de référence grâce à des stratégies basées sur l'analyse de données et des modèles quantitatifs avancés.</p>
+                <p>Lotus capital offre plusieurs stages dans Data science, cybersécurité et motion design.</p>
+            </li>
+            
+            <li class="company-item">
+                <h2>6 - Sofrecom</h2>
+                <img src="media/image7.png" alt="Sofrecom Logo" class="company-logo">
+                <p>Depuis sa création en 2000, Sofrecom Maroc s'est rapidement imposé comme un acteur clé dans le domaine des nouvelles technologies de l'information et de la communication. Grâce à ses activités variées, notamment en ingénierie logicielle, en conseil, en ingénierie de réseaux mobiles, ainsi qu'en veille technologique et concurrentielle, l'entreprise a su se démarquer sur le marché local.</p>
+                <p>Sofrecom offre des stages dans : Data science ; ingénierie radio ; ingénierie IA et développement JAVA et PHP.</p>
+            </li>
+            
+            <li class="company-item">
+                <h2>7 - Stagiaires.ma</h2>
+                <div class="images-container">
+                    <img src="media/image8.png" alt="Stagiaires.ma Logo 1" class="company-logo">
+                    <img src="media/image9.png" alt="Stagiaires.ma Logo 2" class="company-logo">
+                </div>
+                <p>Le site web "Stagaires.ma" vous offre des opportunités de recherche de stage dans votre zone de proche ou une zone précisée par vous-même, dans votre filière de plus. Elle offre des stages à jours dans des entreprises grandes ; moyennes ou une start-up.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>Plateforme collaborative pour aider les étudiants à trouver les meilleurs stages</p>
+    <p>© 2023 EsiCareerBridge. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
